@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industrias Parker</title>
+    <link rel="icon" href="../img/favicon.png">
+<body>
+    <nav>
+        <img src="../assets/img/parker-logo.jpg" alt="">
+        <a href="../index.html">Incio</a>
+        <a href="./galeria.html">Galeria</a>
+        <a href="./presupuesto.html">Presupuesto</a>
+        <a href="./contacto.html">Contacto</a>
+    </nav>
+    <form id="formulario">
+        <div class="form1">
+            <h2>Datos Personales</h2>            
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresar Nombre">
+            <p class="color" id="nomError">Mensaje Error</p>
+            <input type="text" id="apellido" name="apellido" placeholder="Ingresar Apellido">
+            <p class="color" id="apeError">Mensaje Error</p>
+            <input type="text" id="telefono" name="telefono" placeholder="Ingresar Telefono">
+            <p class="color" id="telError">Mensaje Error</p>
+            <input type="text" id="email" name="email" placeholder="Ingresar Correo">
+            <p class="color" id="emaError">Mensaje Error</p>
+        </div>
+        <div class="form2">
+            <h2>Presupuesto</h2>
+            <div class="producto">
+                <select name="producto" id="producto">
+                    <option value="elegir" id="elegir">Elige un Producto</option>
+                    <option value="protesis1">Protesis Piernas</option>
+                    <option value="protesis2">Protesis Brazo</option>
+                    <option value="protesis3">Protesis Mano</option>
+                    <option value="webware1">Webware Gold</option>
+                    <option value="webware2">Webware Platinum</option>
+                    <option value="dron">Dron Araña</option>
+                </select>
+                <label for="cantidad">Cantidad</label>
+                <input type="number" name="cantidad" id="cantidad" min="1" max="10" step="1" value="1">
+                <p class="color" id="proError">Mensaje Error</p>
+            </div>
+            <div class="plazo">
+                <label for="plazo">Plazo de Entrega</label>
+                <input type="number" name="plazo" id="plazo" min="1" max="30" step="1" value="1">
+                <p class="color" id="plaError"></p>
+            </div>
+            <div class="extras">
+                <label for="color">Color Personalizado</label>
+                <input type="checkbox" name="color" id="color">
+                <label for="v1">Version Pro</label>
+                <input type="checkbox" name="v1" id="v1">
+                <label for="v2">Version Max</label>
+                <input type="checkbox" name="v2" id="v2">
+            </div>
+            <div class="privacidad">
+                <p>Presupuesto Estimado: <span id="precio"></span></p>
+                <label for="privacidad">He leido la politica de privacidad</label>
+                <input type="checkbox" name="privacidad" id="privacidad">
+            </div>
+        </div>
+        <input type="button" value="Enviar" id="boton"> 
+    </form>
+    <footer>
+        <div>
+            <img src="../assets/img/facebook.png" alt="Facebook">
+            <img src="../assets/img/instagram.png" alt="Instagram">
+            <img src="../assets/img/whatsapp.png" alt="WhatsApp">
+        </div>
+        <div>&copy; Industrias Parker</div>
+    </footer>
+    <script src="../javascript/presupuesto.js"></script>
+</body>
+</html>
